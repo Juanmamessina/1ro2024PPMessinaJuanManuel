@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Datos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+    <div class="Formulario">
+        <h2>Form Listado</h2>
+        <div class="MenuDesplegable">
+            <form>
+                Filtrar Por:
+                <select id="filtroSelect"> 
+                    <option value="Todos">Todos</option>
+                    <option value="Ciudadano">Ciudadano</option>
+                    <option value="Extranjero">Extranjero</option>
+                </select>
+            </form><br>
+        </div>
+        <div class="CalcularEdad">
+            <form>
+                Calcular Edad Promedio:
+                <input id="edadPromedioInput" type="text" readonly>
+                <button id="calcularButton" type="button">Calcular</button>
+            </form>
+        </div><br>
+        Mostrar Columnas:    
+        <form id="filterForm">       
+            <label>
+                <input type="checkbox" name="filterOption" id="idCB"checked value="idColumna"> ID
+            </label>
+            <label>
+                <input type="checkbox" name="filterOption" id="nombreCB"checked value="nombreColumna"> Nombre
+            </label>
+            <label>
+                <input type="checkbox" name="filterOption" id="apellidoCB"checked value="apellidoColumna"> Apellido
+            </label>
+            <label>
+                <input type="checkbox" name="filterOption" id="fechaNacimientoCB"checked value="fechaNacimientoColumna"> Fecha de nacimiento
+            </label>
+            <label>
+                <input type="checkbox" name="filterOption" id="dniCB"checked value="dniColumna"> Dni
+            </label> 
+            <label>
+                <input type="checkbox" name="filterOption" id="paisOrigenCB"checked value="paisOrigenColumna"> Pais de Origen
+            </label>
+        </form><br>
+
+        <table id="data-Table" border="1">
+            <thead>
+                <tr>
+                    <th id="idColumna">ID</th>
+                    <th id="nombreColumna">Nombre</th>
+                    <th id="apellidoColumna">Apellido</th>
+                    <th id="fechaNacimientoColumna">Fecha de nacimiento</th>
+                    <th id="dniColumna">Dni</th>
+                    <th id="paisOrigenColumna">Pais de origen</th>
+                </tr>
+            </thead>
+            <tbody id="data-output"></tbody>
+        </table>
+        <button id="agregarButton" type="button">Agregar persona</button> <!-- Botón Agregar aquí -->
+    </div> 
+
+    <div id="formAMB" style="display: none;">
+        <h2>Formulario ABM</h2>
+        <form>
+            <label>ID: <input id="idInput" type="text"readonly ></label><br>
+            <label>Nombre: <input id="nombreInput" type="text"></label><br>
+            <label>Apellido: <input id="apellidoInput" type="text"></label><br>
+            <label>Fecha de nacimiento: <input id="fechaNacimientoInput" type="text"></label><br>
+            <select id="tipoSelect">
+                <option value="-">-</option>
+                <option value="Extranjero">Extranjero</option>
+                <option value="Ciudadano">Ciudadano</option>
+            </select>
+            <label for="dniInput" id="dniLabel">Dni: <input id="dniInput" type="number"></label><br>
+            <label for="paisOrigenInput" id="paisOrigenLabel">Pais de origen: <input id="paisOrigenInput" type="text"></label><br>
+            <button id="confirmarButton" type="button">Confirmar</button>
+            <button id="eliminarButton" type="button">Eliminar</button>
+            <button id="cancelarButton" type="button">Cancelar</button>
+            <button id="guardarButton" type="button">Guardar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+<body>
+</html>
+

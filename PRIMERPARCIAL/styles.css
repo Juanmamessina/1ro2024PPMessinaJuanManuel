@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #191a2a; /* Color de fondo nocturno */
+    color: #fff; /* Color de texto */
+    margin: 0;
+    padding: 0;
+}
+
+.Formulario {
+    background-color: #2e3255; /* Color de fondo del formulario */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+}
+
+.Formulario h2 {
+    color: #80aaff; /* Color del título */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.MenuDesplegable select,
+.CalcularEdad input[type="text"],
+#tipoSelect,
+#filtroSelect {
+    border: 1px solid #465582; /* Color del borde */
+    border-radius: 3px;
+    padding: 8px;
+    width: calc(50% - 6px); /* Ancho del 50% menos el espacio del padding y borde */
+    margin-bottom: 10px;
+    background-color: #2e3255; /* Color de fondo */
+    color: #fff; /* Color del texto */
+}
+
+.MenuDesplegable select:focus,
+.CalcularEdad input[type="text"]:focus,
+#tipoSelect:focus,
+#filtroSelect:focus {
+    outline: none;
+    border-color: #80aaff; /* Color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(128, 170, 255, 0.5); /* Sombra al enfocar */
+}
+
+.MenuDesplegable button,
+.CalcularEdad button,
+#formAMB button,
+#agregarButton {
+    background-color: #4a5789; /* Color de fondo del botón */
+    border: none;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: inline-block; /* Para colocar los botones uno al lado del otro */
+}
+
+.MenuDesplegable button:hover,
+.CalcularEdad button:hover,
+#formAMB button:hover,
+#agregarButton:hover {
+    background-color: #34416b; /* Color de fondo del botón al pasar el mouse */
+}
+
+#filterForm label {
+    display: block;
+    margin-bottom: 8px;
+    display: inline-block; /* Hace que los checkbox se muestren en línea */
+    margin-right: 10px;
+}
+
+#data-Table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#data-Table th,
+#data-Table td {
+    border: 1px solid #465582; /* Color del borde */
+    padding: 8px;
+    text-align: left;
+}
+
+#data-Table th {
+    background-color: #2e3255; /* Color de fondo de las cabeceras */
+}
+
+#data-Table tr:nth-child(even) {
+    background-color: #333a5f; /* Color de fondo de filas pares */
+}
+
+#formAMB {
+    background-color: #2e3255; /* Color de fondo del formulario ABM */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+    display: none;
+}
+
+#formAMB h2 {
+    color: #80aaff; /* Color del título */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#formAMB label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#formAMB input[type="text"],
+#formAMB input[type="number"] {
+    border: 1px solid #465582; /* Color del borde */
+    border-radius: 3px;
+    padding: 8px;
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    background-color: #2e3255; /* Color de fondo */
+    color: #fff; /* Color del texto */
+}
+
+#formAMB input[type="text"]:focus,
+#formAMB input[type="number"]:focus {
+    outline: none;
+    border-color: #80aaff; /* Color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(128, 170, 255, 0.5); /* Sombra al enfocar */
+}
